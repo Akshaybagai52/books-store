@@ -10,7 +10,7 @@ const bookSlice = createSlice({
     initialState,
     reducers: {
         setSearchResults: (state, action) => {
-            state.searchResults = state.list.filter(book =>
+            state.searchResults = state.list.filter((book:any) =>
               book.title.toLowerCase().includes(action.payload.toLowerCase())
             );
         },
