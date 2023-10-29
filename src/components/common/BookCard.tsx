@@ -16,6 +16,7 @@ const placeholderImage = 'https://images.unsplash.com/photo-1532012197267-da84d1
 const BookCard: React.FC<BookCardProps> = ({ book }) => {
   const { title, author, imageUrl } = book;
   const bookImage = imageUrl || placeholderImage; // Use the provided image URL or placeholder
+  
 
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg mb-4">
@@ -26,6 +27,7 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
       </div>
     </div>
   );
-};
+}
 
 export default BookCard;
+      
